@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainFragment" >
+
+    <RelativeLayout
+        android:id="@+id/rlHomeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rlHomeMainImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+			
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="175dp" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rlHomeMainFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/btnInstructor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_instructor"
+                android:background="@drawable/instructor_button_style"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textSize="@dimen/home_button_text_size" />
+            
+			<Button
+			    android:id="@+id/btnPersonalTraining"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_personal_training"
+                android:background="@drawable/instructor_button_style"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="60dp"
+                android:textSize="@dimen/home_button_text_size" />
+			
+            <Button
+                android:id="@+id/btnSelectWorkout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_select_workout"
+                android:background="@drawable/select_workout_button_style"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/home_button_text_size" />
+
+            <Button
+                android:id="@+id/btnQuickStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_quick_start"
+                android:background="@color/bg_button_home"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/home_button_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.bitgym.ui.fragments.MainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/main_fragment" />
+    </RelativeLayout>
+	<include layout="@layout/drawer" />
+</android.support.v4.widget.DrawerLayout>

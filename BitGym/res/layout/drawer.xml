@@ -1,0 +1,256 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svDrawer"
+    android:layout_width="320dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="start|fill"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|fill"
+        android:background="@color/bg_slide_menu" >
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:clickable="true"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvHomeLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/left_menu_home_menu"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuLoginMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:layout_below="@+id/rlLeftMenuMenu"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgLoginLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:padding="@dimen/common_padding"
+                android:src="@drawable/left_menu_avatar" />
+
+            <TextView
+                android:id="@+id/tvLoginLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgLoginLeftMenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="@string/left_menu_login_menu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/home_button_text_size" />
+
+            <TextView
+                android:id="@+id/tvAccountNameLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tvLoginLeftMenu"
+                android:background="@drawable/textview_left_menu_around_style"
+                android:gravity="center_vertical"
+                android:text="@string/empty_string"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuInstructorLeftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:layout_below="@+id/rlLeftMenuLoginMenu"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgInstructorLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:padding="@dimen/common_padding"
+                android:src="@drawable/left_menu_instructor_icon" />
+
+            <TextView
+                android:id="@+id/tvInstructorLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgInstructorLeftMenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="@string/left_menu_instructor_menu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/home_button_text_size" />
+
+            <Switch
+                android:id="@+id/swInstructorLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvInstructorLeftMenu"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuConnectBikeLeftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:layout_below="@+id/rlLeftMenuInstructorLeftMenu"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgConnectBikeLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:padding="@dimen/common_padding"
+                android:src="@drawable/left_menu_connect_icon" />
+
+            <TextView
+                android:id="@+id/tvConnectBikeLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgConnectBikeLeftMenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="@string/left_menu_connect_menu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/home_button_text_size" />
+
+            <TextView
+                android:id="@+id/tvConnectBikeNumberLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tvConnectBikeLeftMenu"
+                android:background="@drawable/textview_left_menu_around_gray_style"
+                android:gravity="center_vertical"
+                android:text="BIKE 10"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/normal_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuWorkoutHistoryLeftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:layout_below="@+id/rlLeftMenuConnectBikeLeftMenu"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgWorkoutHistoryLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:padding="@dimen/common_padding"
+                android:src="@drawable/left_menu_workout_icon" />
+
+            <TextView
+                android:id="@+id/tvWorkoutHistoryLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgWorkoutHistoryLeftMenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="@string/left_menu_workout_story_menu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/home_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuAppDemoLeftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:layout_below="@+id/rlLeftMenuWorkoutHistoryLeftMenu"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgAppDemoLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:padding="@dimen/common_padding"
+                android:src="@drawable/left_menu_appdemo_icon" />
+
+            <TextView
+                android:id="@+id/tvAppDemoLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgAppDemoLeftMenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="@string/left_menu_app_demo_menu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/home_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLeftMenuSettingLeftMenu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/left_menu_height"
+            android:layout_below="@+id/rlLeftMenuAppDemoLeftMenu"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgSettingLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:padding="@dimen/common_padding"
+                android:src="@drawable/left_menu_setting_icon" />
+
+            <TextView
+                android:id="@+id/tvSettingLeftMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgSettingLeftMenu"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/small_padding"
+                android:text="@string/left_menu_setting_menu"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/home_button_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

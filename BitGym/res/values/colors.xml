@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_color">#e5e5e5</color>
+    <color name="red_asia">#e5e5e5</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="dark_gray">#292929</color>
+    <color name="black">#000000</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="bg_button_home">#E6FFFFFF</color>
+	<color name="bg_slide_menu">#1A2225</color>
+</resources>
