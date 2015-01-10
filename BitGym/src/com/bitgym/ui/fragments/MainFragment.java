@@ -70,21 +70,6 @@ public class MainFragment extends BaseFragment implements OnClickListener {
         ((CirclePageIndicator) mIndicator).setRadius(4 * density1);
         
 
-        mIndicator.setOnPageChangeListener(new OnPageChangeListener() {
-
-            @Override
-            public void onPageSelected(int page) {
-            }
-
-            @Override
-            public void onPageScrolled(int arg0, float arg1, int arg2) {
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int arg0) {
-            }
-        });
-        showSupportActionBar(true);        
         ((Button) view.findViewById(R.id.btnSelectWorkout)).setOnClickListener(this);
         ((Button) view.findViewById(R.id.btnQuickStart)).setOnClickListener(this);
         
