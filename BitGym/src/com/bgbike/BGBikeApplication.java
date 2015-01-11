@@ -2,7 +2,7 @@ package com.bgbike;
 
 import android.app.Application;
 
-public class BitGymApplication extends Application {
+public class BGBikeApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
