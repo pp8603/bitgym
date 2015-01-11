@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bitgym"
+    package="com.bgbike"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,13 +19,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     
     <application
-        android:name="com.bitgym.BitGymApplication"
+        android:name="com.bgbike.BitGymApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.bitgym.ui.MainActivity"
+            android:name="com.bgbike.ui.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.bitgym.ui.LoginActivity"
+            android:name="com.bgbike.ui.LoginActivity"
             android:configChanges="keyboard|keyboardHidden|screenSize|uiMode|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" >

@@ -1,12 +1,12 @@
-package com.bitgym.adapter;
+package com.bgbike.adapter;
 
 import android.database.DataSetObserver;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.bitgym.R;
-import com.bitgym.ui.fragments.MainImageFragment;
+import com.bgbike.R;
+import com.bgbike.ui.fragments.MainImageFragment;
 
 public class ImageMainFragmentAdapter extends FragmentPagerAdapter {
 

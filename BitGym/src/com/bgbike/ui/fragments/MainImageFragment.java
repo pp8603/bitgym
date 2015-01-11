@@ -1,4 +1,4 @@
-package com.bitgym.ui.fragments;
+package com.bgbike.ui.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bitgym.R;
+import com.bgbike.R;
 
 public final class MainImageFragment extends BaseFragment {
 	private int image;

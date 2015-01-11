@@ -1,4 +1,4 @@
-package com.bitgym.adapter;
+package com.bgbike.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

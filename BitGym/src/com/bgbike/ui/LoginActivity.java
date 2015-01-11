@@ -1,4 +1,4 @@
-package com.bitgym.ui;
+package com.bgbike.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 
-import com.bitgym.R;
+import com.bgbike.R;
 
 public class LoginActivity extends BaseActivity implements OnClickListener {
 

@@ -1,9 +1,9 @@
 
-package com.bitgym.ui;
+package com.bgbike.ui;
 
 import android.os.Bundle;
 
-import com.bitgym.R;
+import com.bgbike.R;
 
 public class MainActivity extends BaseActivity {
 

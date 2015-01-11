@@ -1,5 +1,5 @@
 
-package com.bitgym.ui.fragments;
+package com.bgbike.ui.fragments;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -13,8 +13,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.bitgym.R;
-import com.bitgym.adapter.ImageMainFragmentAdapter;
+import com.bgbike.adapter.ImageMainFragmentAdapter;
+import com.bgbike.R;
 import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.PageIndicator;
 

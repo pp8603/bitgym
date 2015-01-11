@@ -37,7 +37,7 @@
         android:src="@drawable/arrow_drawer_back"
         android:visibility="invisible" />
     
-    <com.bitgym.ui.widgets.AutoResizeTextView
+    <com.bgbike.ui.widgets.AutoResizeTextView
         android:id="@+id/actionbarTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

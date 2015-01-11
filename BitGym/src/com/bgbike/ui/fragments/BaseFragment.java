@@ -1,10 +1,10 @@
 
-package com.bitgym.ui.fragments;
+package com.bgbike.ui.fragments;
 
 import android.app.Activity;
 
 import com.actionbarsherlock.app.SherlockFragment;
-import com.bitgym.ui.BaseActivity;
+import com.bgbike.ui.BaseActivity;
 
 
 public abstract class BaseFragment extends SherlockFragment  {

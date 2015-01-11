@@ -1,4 +1,4 @@
-package com.bitgym;
+package com.bgbike;
 
 import android.app.Application;
 

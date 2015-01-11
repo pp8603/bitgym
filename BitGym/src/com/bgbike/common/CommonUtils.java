@@ -1,5 +1,5 @@
 
-package com.bitgym.common;
+package com.bgbike.common;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

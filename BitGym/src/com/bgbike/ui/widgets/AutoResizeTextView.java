@@ -1,4 +1,4 @@
-package com.bitgym.ui.widgets;
+package com.bgbike.ui.widgets;
 
 import android.content.Context;
 import android.text.Layout.Alignment;

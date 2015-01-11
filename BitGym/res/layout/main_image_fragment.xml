@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent" >
 
-    <com.bitgym.adapter.AspectRatioImageView
+    <com.bgbike.adapter.AspectRatioImageView
         android:id="@+id/mainImageView"
 		android:adjustViewBounds="true"
         android:layout_marginLeft="0dp"
